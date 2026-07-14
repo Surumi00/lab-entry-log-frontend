@@ -45,9 +45,9 @@ const Addcourse = () => {
             <div className="row">
                 <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <h1 className="text-center">Add LAB</h1>
-                   <div className="row g-3">
+                   <div className="row g-5">
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                        <label htmlFor="" className="form-label" > name:</label>
+                        <label htmlFor="" className="form-label" > name</label>
                         <input type="text"
                          className="form-control" required
                          name='name'
@@ -57,18 +57,17 @@ const Addcourse = () => {
                         />
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                        <label htmlFor="" className="form-label">dept :</label>
-                        <input type="text"
-                         className="form-control"
-                          required
-                          name='dept'
-                          value={input.dept}
-                          onChange={inputHandler}
-                          />
+                        <label htmlFor="" className="form-label">dept </label>
+                        <select name="" id="" className="form-control"  name='dept'
+                          value={input.dept} onChange={inputHandler}>
+                            <option value="MCA">MCA</option>
+                            <option value="EEE">EEE</option>
+                            <option value="ECE">ECE</option>
+                        </select>
                         
                     </div>
                      <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                        <label htmlFor="" className="form-label">semester:</label>
+                        <label htmlFor="" className="form-label">semester</label>
                         <input type="text"
                          className="form-control"
                           required
@@ -79,7 +78,7 @@ const Addcourse = () => {
                         
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                        <label htmlFor="" className="form-label">course:</label>
+                        <label htmlFor="" className="form-label">course</label>
                          <input type="text"
                          className="form-control"
                           required
@@ -90,7 +89,7 @@ const Addcourse = () => {
                         
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                        <label htmlFor="" className="form-label">SystemNumber:</label>
+                        <label htmlFor="" className="form-label">SystemNumber</label>
                         <input type="text"
                          className="form-control"
                           required
@@ -101,7 +100,7 @@ const Addcourse = () => {
                        
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                        <label htmlFor="" className="form-label">login time:</label>
+                        <label htmlFor="" className="form-label">login time</label>
                         <input name="text" id=""
                          className="form-control"
                          name='loginTime'
@@ -110,7 +109,7 @@ const Addcourse = () => {
                          ></input>
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                        <label htmlFor="" className="form-label">logoutTime:</label>
+                        <label htmlFor="" className="form-label">logoutTime</label>
                         <input type="text" className="form-control"
                         name='logoutTime'
                          value={input.logoutTime}
@@ -118,7 +117,7 @@ const Addcourse = () => {
                         />
                     </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
-                        <label htmlFor="" className="form-label">Date:</label>
+                        <label htmlFor="" className="form-label">Date</label>
                         <input type="text" className="form-control" required
                         
                         name='date'
@@ -130,7 +129,7 @@ const Addcourse = () => {
                     
                     
                    </div>
-                   <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                   <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4 mt-5 ">
                         <button className="btn btn-success" onClick={dataHandler}>submit</button>
                     </div>
                 </div>
