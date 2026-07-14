@@ -5,14 +5,20 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Addcourse from './components/Addcourse'
 import ViewLab from './components/ViewLab'
+import{BrowserRouter,Routes,Route} from 'react-router-dom'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
     <>
-      <Addcourse/>
-      <ViewLab/>
+      <BrowserRouter>
+      <Routes>
+         
+       <Route path='/' element={<Addcourse />} />
+        <Route path='/Viewlab' element={<ViewLab />} />
+      </Routes>
+      </BrowserRouter>
     </>
   )
 }
