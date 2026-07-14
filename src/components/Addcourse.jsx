@@ -65,6 +65,17 @@ const Addcourse = () => {
                           />
                         
                     </div>
+                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
+                        <label htmlFor="" className="form-label">semester:</label>
+                        <input type="text"
+                         className="form-control"
+                          required
+                          name='sem'
+                          value={input.sem}
+                          onChange={inputHandler}
+                          />
+                        
+                    </div>
                     <div className="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4">
                         <label htmlFor="" className="form-label">course:</label>
                          <input type="text"
@@ -81,8 +92,8 @@ const Addcourse = () => {
                         <input type="text"
                          className="form-control"
                           required
-                          name='systemnumber'
-                          value={input.systemnumber}
+                          name='systemNumber'
+                          value={input.systemNumber}
                           onChange={inputHandler}
                           />
                        
